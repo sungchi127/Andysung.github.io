@@ -1,6 +1,6 @@
 # 個人部落格網站
 
-![部落格網站](https://via.placeholder.com/1200x600)
+![部落格網站連結](https://sungchi127.github.io/Andysung.github.io/)
 
 ## 專案概述
 
