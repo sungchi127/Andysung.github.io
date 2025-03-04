@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的部落格 | 文章</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">我的部落格</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="articles.html" class="active">文章</a></li>
+                <li><a href="contact.html">聯繫我</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 文章列表 -->
+    <section class="articles-section">
+        <div class="container">
+            <h2 class="section-title">所有文章</h2>
+            
+            <div class="article-filter">
+                <input type="text" id="searchInput" placeholder="搜索文章...">
+                <select id="categoryFilter">
+                    <option value="all">所有分類</option>
+                    <option value="programming">程式設計</option>
+                    <option value="algorithm">演算法</option>
+                    <option value="web">Web開發</option>
+                    <option value="ai">人工智能</option>
+                </select>
+            </div>
+            
+            <div class="articles-list">
+                <div class="article-item" data-category="web">
+                    <span class="date">2023年10月15日</span>
+                    <h3><a href="article.html">我的第一個Web項目經驗分享</a></h3>
+                    <p>在這篇文章中，我將分享我開發第一個Web應用程序的經驗，包括使用的技術和遇到的挑戰...</p>
+                    <div class="article-meta">
+                        <span class="category">Web開發</span>
+                        <span class="read-time">閱讀時間: 5分鐘</span>
+                    </div>
+                </div>
+                
+                <div class="article-item" data-category="algorithm">
+                    <span class="date">2023年9月28日</span>
+                    <h3><a href="article.html">數據結構學習筆記：樹和圖</a></h3>
+                    <p>本文整理了我學習樹和圖這兩種重要數據結構的筆記，包括它們的特性、實現方式和常見應用...</p>
+                    <div class="article-meta">
+                        <span class="category">演算法</span>
+                        <span class="read-time">閱讀時間: 7分鐘</span>
+                    </div>
+                </div>
+                
+                <div class="article-item" data-category="programming">
+                    <span class="date">2023年9月10日</span>
+                    <h3><a href="article.html">Python與資料分析入門</a></h3>
+                    <p>這篇文章介紹了如何使用Python進行基本的資料分析，包括常用的庫如Pandas和Matplotlib...</p>
+                    <div class="article-meta">
+                        <span class="category">程式設計</span>
+                        <span class="read-time">閱讀時間: 6分鐘</span>
+                    </div>
+                </div>
+                
+                <div class="article-item" data-category="ai">
+                    <span class="date">2023年8月22日</span>
+                    <h3><a href="article.html">機器學習入門：從線性回歸開始</a></h3>
+                    <p>這篇文章將帶您從最基本的線性回歸算法開始，理解機器學習的基本概念和工作原理...</p>
+                    <div class="article-meta">
+                        <span class="category">人工智能</span>
+                        <span class="read-time">閱讀時間: 8分鐘</span>
+                    </div>
+                </div>
+                
+                <div class="article-item" data-category="web">
+                    <span class="date">2023年8月5日</span>
+                    <h3><a href="article.html">響應式網頁設計實踐指南</a></h3>
+                    <p>學習如何使用HTML5、CSS3和JavaScript創建能夠適應不同屏幕尺寸的響應式網站...</p>
+                    <div class="article-meta">
+                        <span class="category">Web開發</span>
+                        <span class="read-time">閱讀時間: 5分鐘</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#" class="next">下一頁 &raquo;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁腳 -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 我的部落格. 保留所有權利。</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

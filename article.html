@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章標題 | 我的部落格</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">我的部落格</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="articles.html" class="active">文章</a></li>
+                <li><a href="contact.html">聯繫我</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 文章內容 -->
+    <article class="article-full">
+        <div class="container">
+            <header class="article-header">
+                <h1>我的第一個Web項目經驗分享</h1>
+                <div class="article-meta">
+                    <span class="date">2023年10月15日</span>
+                    <span class="category">Web開發</span>
+                    <span class="read-time">閱讀時間: 5分鐘</span>
+                </div>
+                <img src="https://via.placeholder.com/1200x600" alt="文章封面圖片" class="article-cover">
+            </header>
+            
+            <div class="article-content">
+                <p>當我接到第一個Web項目任務時，既興奮又緊張。這是我第一次將課堂上學到的知識應用到實際項目中。在這篇文章中，我想分享這次經歷中的學習和收穫。</p>
+                
+                <h2>項目背景</h2>
+                <p>這是一個簡單的個人部落格網站，需要包含首頁、文章列表和文章詳情頁。雖然聽起來簡單，但對於初學者而言，每一步都是挑戰。</p>
+                
+                <h2>使用的技術</h2>
+                <p>我選擇了以下技術來構建這個網站：</p>
+                <ul>
+                    <li><strong>HTML5</strong>：用於創建網頁的基本結構</li>
+                    <li><strong>CSS3</strong>：處理網站的樣式和布局</li>
+                    <li><strong>JavaScript</strong>：增加一些互動功能</li>
+                    <li><strong>Responsive Design</strong>：確保網站在不同設備上都有良好的顯示效果</li>
+                </ul>
+                
+                <h2>遇到的挑戰</h2>
+                <p>在開發過程中，我遇到了幾個主要的挑戰：</p>
+                
+                <h3>1. 響應式設計</h3>
+                <p>確保網站在手機、平板和電腦上都能正常顯示並不容易。我學會了使用媒體查詢（Media Queries）和彈性布局（Flexible Layout）來解決這個問題。</p>
+                
+                <pre><code>@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+}</code></pre>
+                
+                <h3>2. 導航欄的實現</h3>
+                <p>我想要一個在桌面端展開，在移動端折疊的導航欄。這需要結合CSS和JavaScript來實現。</p>
+                
+                <h3>3. 文章過濾功能</h3>
+                <p>在文章列表頁，我實現了一個根據類別過濾文章的功能，這是我第一次使用JavaScript操作DOM元素。</p>
+                
+                <h2>學到的經驗</h2>
+                <p>這個項目讓我學到了很多：</p>
+                <ol>
+                    <li>規劃先行：在寫代碼前，先規劃網站的結構和功能非常重要</li>
+                    <li>持續學習：遇到問題時，要勇於查找資料和嘗試解決</li>
+                    <li>簡單優先：先實現基本功能，再逐步添加複雜features</li>
+                    <li>測試的重要性：在不同設備上測試可以發現很多問題</li>
+                </ol>
+                
+                <h2>結語</h2>
+                <p>完成這個項目後，我對Web開發有了更深入的理解。雖然這只是一個簡單的網站，但它包含了Web開發的基本元素。我期待在未來的項目中挑戰更複雜的功能和技術。</p>
+                
+                <p>如果你也是Web開發的初學者，希望我的經驗能給你一些啟發。記住，每個專業的開發者都是從基礎開始的，持續學習和實踐是變得更好的關鍵。</p>
+            </div>
+            
+            <div class="article-tags">
+                <span>標籤:</span>
+                <a href="#">Web開發</a>
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">JavaScript</a>
+                <a href="#">初學者</a>
+            </div>
+            
+            <div class="article-navigation">
+                <a href="#" class="prev">&laquo; 上一篇：數據結構學習筆記：樹和圖</a>
+                <a href="#" class="next">下一篇：Python與資料分析入門 &raquo;</a>
+            </div>
+            
+            <div class="article-comments">
+                <h3>評論 (2)</h3>
+                <div class="comment">
+                    <div class="comment-avatar">
+                        <img src="https://via.placeholder.com/50" alt="用戶頭像">
+                    </div>
+                    <div class="comment-content">
+                        <div class="comment-header">
+                            <span class="comment-author">張明</span>
+                            <span class="comment-date">2023年10月16日</span>
+                        </div>
+                        <p>非常棒的分享！我也是Web開發初學者，你的經驗對我很有幫助。</p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment-avatar">
+                        <img src="https://via.placeholder.com/50" alt="用戶頭像">
+                    </div>
+                    <div class="comment-content">
+                        <div class="comment-header">
+                            <span class="comment-author">李華</span>
+                            <span class="comment-date">2023年10月17日</span>
+                        </div>
+                        <p>請問你用了什麼資源來學習响應式設計？我正在找一些好的教程。</p>
+                    </div>
+                </div>
+                
+                <form class="comment-form">
+                    <h3>發表評論</h3>
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">電子郵件</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">評論內容</label>
+                        <textarea id="comment" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">提交評論</button>
+                </form>
+            </div>
+        </div>
+    </article>
+
+    <!-- 頁腳 -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 我的部落格. 保留所有權利。</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
